@@ -42,8 +42,8 @@
                 
                 <nav>
                     <ul>
-                      <li class="col-sm-3"><a href="index.html">Home</a></li>
-                      <li class="col-sm-3"><a href="portfolio.html" class="active">Portfolio</a></li>
+                      <li class="col-sm-3"><a href="index.html" class="active">Home</a></li>
+                      <li class="col-sm-3"><a href="portfolio.html">Portfolio</a></li>
                       <li class="col-sm-3"><a href="about.html">About Me</a></li>
                       <li class="col-sm-3"><a href="contact.html">Contact</a></li>
                     </ul>
@@ -87,8 +87,18 @@
         <div class="home-page-carousel owl-carousel">
                     
             <div class="carousel-slide">
+                <img class="carousel-image" src="images/home-page-carousel/smokey.png" alt="React Component Library">
+                <div class="carousel-project-info">
+                    <h2 class="category-label">Featured Project - Design Systems and React Development</h2>
+                    <h3>React Component Library</h3>
+                    <p>Check out this case study on a React component library I developed to make coding at Clayton Homes more consistent, accessible, fast, and efficient.</p>
+                    <a href="project-component-library.html" class="carousel-project-button">View Case Study</a>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
                 <img class="carousel-image" src="images/home-page-carousel/clayton-retail.png" alt="Clayton Retail Responsive Prototype">
-                <div class="carousel-project-info row">
+                <div class="carousel-project-info">
                     <h2 class="category-label">Featured Project - Design/Development</h2>
                     <h3>Clayton Homes Retail Responsive Prototype</h3>
                     <p>Proof of concept to show a responsive version of the Clayton Homes retailer sites.</p>
@@ -99,7 +109,7 @@
 
             <div class="carousel-slide">
                 <img class="carousel-image" src="images/home-page-carousel/oregontrail.png" alt="Oregon Trail Games Logo & Business Cards">
-                <div class="carousel-project-info row">
+                <div class="carousel-project-info">
                     <h2 class="category-label">Featured Project - Graphic Design</h2>
                     <h3>Oregon Trail Games Logo & Business Cards</h3>
                     <p>This logo was created for a table top gaming store. It was used on their business cards, and on storefront signage.</p>
@@ -109,7 +119,7 @@
 
             <div class="carousel-slide">
                 <img class="carousel-image" src="images/home-page-carousel/evs-101.png" alt="EVs 101 Infographic">
-                <div class="carousel-project-info row">
+                <div class="carousel-project-info">
                     <h2 class="category-label">Featured Project - Graphic Design</h2>
                     <h3>Electric Vehicles 101 Infographic</h3>
                     <p>I created this as a personal pet project to inform others of the benefits of EVs.</p>
@@ -117,15 +127,7 @@
                 </div>
             </div>
 
-            <div class="carousel-slide">
-                <p>TODO:Graphic coming soon</p>
-                <div class="carousel-project-info row">
-                    <h2 class="category-label">Featured Project - Design Systems and React Development</h2>
-                    <h3>React Component Library</h3>
-                    <p>Check out this case study on a React component library I developed</p>
-                    <a href="project-react-components.html" class="carousel-project-button">View Case Study</a>
-                </div>
-            </div>
+            
             
         </div>
         <!--/carousel-->
@@ -172,10 +174,10 @@
 <script>$(document).ready(function(){
     $('.owl-carousel').owlCarousel({
     loop:true,
+    stagePadding: 50,
     margin:10,
     nav:true,
-    autoplay:true,
-    autoplayHoverPause:true,
+    dotsEach: 1,
     responsive:{
         0:{
             items:1

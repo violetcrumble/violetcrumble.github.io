@@ -9,18 +9,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "lt_oksanabold";
-  src: url("../fonts/lt_oksana_bold-webfont.eot");
-  src: url("../fonts/lt_oksana_bold-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/lt_oksana_bold-webfont.woff") format("woff"),
-    url("../fonts/lt_oksana_bold-webfont.ttf") format("truetype"),
-    url("../fonts/lt_oksana_bold-webfont.svg#lt_oksanabold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   background: url("../images/bg-page.gif") repeat #300500;
   font-family: Helvetica, Arial, sans-serif;
@@ -38,7 +26,7 @@ li {
 }
 
 h1 {
-  font: 22px lt_oksanabold;
+  font: 22px Helvetica, Arial, sans-serif;
   text-transform: lowercase;
 }
 
@@ -108,12 +96,10 @@ nav ul li a.active:visited {
   background-color: #1e1e1e;
 }
 
-#main h2 {
-  font-size: 14px;
-}
-
-#main strong {
-  color: #720b00;
+.welcome p,
+.welcome li {
+  font-size: 16px;
+  line-height: 160%;
 }
 
 section.side_blurbs {
@@ -139,24 +125,16 @@ section.side_blurbs {
   -moz-top-right-border-radius: 5px;
   border-top-right-radius: 5px;
 }
-.side_blurbs p.side_blurb_left {
-  text-align: left;
-  margin-left: 15px;
-  margin-right: 15px;
+.side_blurbs .cta-buttons {
+  text-align: center;
+  padding: 0 20px;
+  height: 60px;
 }
 .side_blurbs p {
   margin: 20px 40px;
   text-align: center;
   font-size: 16px;
   line-height: 160%;
-}
-.side_blurbs li {
-  font-size: 16px;
-  line-height: 160%;
-  margin-bottom: 7px;
-}
-.side_blurbs_welcome li {
-  margin-bottom: 20px;
 }
 .side_blurbs a:link,
 .side_blurbs a:visited {
@@ -202,16 +180,42 @@ footer {
 }
 
 .home-page-carousel {
-  background-color: #242526;
   margin-top: 20px;
 }
+.home-page-carousel .owl-nav {
+  text-align: center;
+}
+.home-page-carousel .owl-nav .owl-prev span,
+.home-page-carousel .owl-nav .owl-next span {
+  color: #fff;
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 200;
+}
 
+.home-page-carousel .owl-dots {
+  margin: 0 auto;
+  text-align: center;
+}
+.home-page-carousel .owl-dots .owl-dot {
+  border: solid 1px white;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+}
+.home-page-carousel .owl-dots .owl-dot.active {
+  background-color: red;
+}
 .carousel-image {
   width: 100%;
 }
 .carousel-project-info {
   padding: 10px 20px 20px 20px;
   border-top: solid 1px #ccc;
+  background-color: #242526;
+  min-height: 270px;
 }
 .carousel-project-info .category-label {
   text-transform: uppercase;
