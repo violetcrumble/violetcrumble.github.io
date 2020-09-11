@@ -113,7 +113,7 @@ nav ul li a.active:visited {
 }
 
 section.side_blurbs {
-  background-color: #000;
+  background-color: #242526;
   padding-bottom: 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -124,7 +124,7 @@ section.side_blurbs {
 .side_blurbs h3 {
   background-color: #720b00;
   color: #fff;
-  font: 15px lt_oksanaregular;
+  font: 18px lt_oksanaregular;
   padding: 5px;
   text-align: center;
   text-transform: lowercase;
@@ -197,7 +197,7 @@ footer {
 }
 
 .home-page-carousel {
-  background-color: #000;
+  background-color: #242526;
   margin-top: 20px;
 }
 
@@ -236,7 +236,10 @@ a.carousel-project-button:hover,
 a.carousel-project-button:active {
   background-color: #410700;
 }
-
+ul.slick-dots {
+  background-color: #000;
+  color: #fff;
+}
 .home-page-copy {
   max-width: 900px;
 }
