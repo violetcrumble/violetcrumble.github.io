@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+/* Layout */
+body {
+	margin: 0;
+	padding: 0;
+	background: url("images/bg-page.gif") #000;
+	text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, a, ul, li, ol, dl, dt, dd, address {
+	font: 12px Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-align: left;
+}
+
+.left_content {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.right_content {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.white-border {
+	border: solid 1px #fff;
+}
+
+h1.portfolio {
+	width: 90px; height: 23px;
+	background: url("images/h-portfolio.gif");
+	text-indent: -9999px;
+}
+
+h1.about {
+	width: 102px; height: 19px;
+	background: url("images/h-about.gif");
+	text-indent: -9999px;
+}
+
+h1.contact {
+	width: 81px; height: 19px;
+	background: url("images/h-contact.gif");
+	text-indent: -9999px;
+}
+
+strong {
+	color: #fd2900;
+}
+
+a:link, a:visited {
+	color: #fd2900;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+div#headercontainer {
+	height: 150px;
+	background: url("images/colorbar.gif") top repeat-x #000;
+	text-align: center;
+}
+
+	div#header {
+		width: 990px;
+		height: 150px;
+		margin: 0 auto 0 auto;
+	}
+	
+		div#logo {
+			width: 295px;
+			height: 86px;
+			float: left;
+			position: relative;
+			top: 50px;
+			left: 8px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		div#navcontainer {
+			width: 506px;
+			height: 49px;
+			float: right;
+			position: relative;
+			top: 99px;
+			left: 0;
+			margin: 0;
+			padding: 0;
+		}
+		
+
+div#container {
+	width: 990px;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 0 0;
+}
+
+div#container_sub {
+	width: 990px;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 0 20px;
+}
+
+
+	div#index_container_left {
+		width: 709px;
+		float: left;
+	}
+	
+		div#features {
+			width: 709px;
+			height: 303px;
+			text-align: left;
+		}
+		
+		div#introtext {
+			padding-left: 30px;
+		}
+		
+			div#introtext p, div#introtext li {
+				line-height: 22px;
+			}
+	
+	div#index_container_right {
+		width: 281px;
+		float: right;
+	}
+	
+		div#index_box_cta {
+			width: 253px;
+			height: 181px;
+			background: url("images/bg-index-box-cta.gif") no-repeat;
+			margin: 14px;
+			text-align: center;
+		}
+		
+			div#index_box_cta p.first {
+				padding-top: 50px;
+				margin-top: 0;
+			}
+	
+		
+			div#index_box_cta p {
+				text-align: center;
+				font-size: 14px;
+			}
+			
+			div#index_box_cta a {
+				font-size: 14px;
+			}
+		
+		div#index_box_resume {
+			width: 253px;
+			height: 125px;
+			background: url("images/bg-index-box-resume.gif") no-repeat;
+			margin: 14px;
+		}
+		
+			div#resume_download {
+				width: 170px;
+				position: relative;
+				top: 70px;
+				left: 90px;
+			}
+			
+				div#resume_pdf, div#resume_doc {
+					width: 85px;
+					float: left;
+				}
+			
+		div#index_box_twitter {
+			width: 253px;
+			height: 191px;
+			background: url("images/bg-index-box-twitter.gif") no-repeat;
+			margin: 14px;
+			padding: 30px 0 0 0 ;
+		}
+		
+		
+	div#features {
+		width: 709px;
+		height: 299px;
+		background: url("images/bg-features.gif") no-repeat;
+		margin: 14px 14px 14px 0;
+		padding: 0;
+		text-align: left;
+	}
+	
+		div#projects-btn {
+			position: relative;
+			top: 0;
+			left: 451px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		div#slider {
+			width: 638px;
+			height: 228px;
+			padding: 0;
+			margin: 19px 0 0 37px;
+		}
+	
+	
+div#footercontainer {
+	background-color: #000;
+	clear: both;
+	height: 200px;
+	width: 100%;
+}
+		
+	div#footer {
+		width: 990px;
+		margin: 0 auto 0 auto;
+	}
+	
+		div#social_icons {
+			float: left;
+			width: 400px;
+			height: 150px;
+			text-align: left;
+			margin: 0;
+			padding: 10px;
+			border-right: solid 1px #900;
+		}
+		
+			div#social_icons img {
+				margin: 0 5px 15px 0;
+			}
+			
+		div#flickr {
+			float: left;
+			width: 500px;
+			margin: 0;
+			padding: 10px 10px 10px 30px;
+			text-align: left;
+		}
+		
+			div#flickr table {
+				margin-left: -10px;
+			}
+						
+div#copyright_footnav {
+	width: 990px;
+	margin: 0 auto 0 auto;
+	clear: both;
+}
+
+	div#copyright {
+		float: left;
+		width: 400px;
+	}
+	
+	div#footnav {
+		float: right;
+		width: 280px;
+		text-align: right;
+	}
+
+
+		ul#footnav {
+			list-style-type: none;
+			text-align: right;
+			margin: 0;
+			padding: 0;
+		}
+		
+			ul#footnav li {
+				display: inline;
+				float: left;
+				margin: 0;
+				padding: 10px 0 0 20px;
+				text-align: right;
+			}
+	
+
+
+/* Navigation */	
+#nav {
+	background: url("images/navigation.gif") no-repeat;
+	width: 506px;
+	height: 49px;
+	margin: 0;
+	padding: 0;
+}
+
+#nav span {
+	display: none;
+}
+
+#nav li, #nav a {
+	height: 49px;
+	display: block;
+}
+
+#nav li {
+	float: left;
+	list-style: none;
+	display: inline;
+}
+
+#nav01 {width: 103px;}
+#nav02 {width: 142px;}
+#nav03 {width: 144px;}
+#nav04 {width: 117px;}
+
+#nav01 a:hover, #nav01 a.current {background:url("images/navigation.gif") 0px -49px no-repeat; }
+#nav02 a:hover, #nav02 a.current {background:url("images/navigation.gif") -103px -49px no-repeat; }
+#nav03 a:hover, #nav03 a.current {background:url("images/navigation.gif") -245px -49px no-repeat; }
+#nav04 a:hover, #nav04 a.current {background:url("images/navigation.gif") -389px -49px no-repeat; }
+
+
+/* Other */
+
+img.left {
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+
+/* Twitter */
+.tweet, .query {
+  color: #FFF;
+   }
+  .tweet .tweet_list, .query .tweet_list {
+	-webkit-border-radius: .5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	
+	 }
+	
+	.tweet .tweet_list li, .query .tweet_list li {
+	  overflow-y: auto;
+	  overflow-x: hidden;
+	  padding: .5em;
+	  font-size: 10px;
+	   }
+	  .tweet .tweet_list li a, .query .tweet_list li a {
+		color: #FFF;
+		font-size: 10px; }
+	.tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
+	   }
+	.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
+	  padding-right: .5em;
+	  float: left; }
+	  .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+		vertical-align: middle; }
+
+
+/* Flickr Badge */
+#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+#flickr_icon_td {padding:0 0 0 0 !important;}
+.flickr_badge_image {text-align:center !important;}
+.flickr_badge_image img {border: 1px solid #FFF !important;}
+#flickr_www {display:block; padding:0 0 0 0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_wrapper {}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+
+
+/******************** PORTFOLIO page css starts ******************/
+#portfolio_container{	
+	width: 990px;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 0 25px;	
+}
+
+#portfolio_container .portfolio_div_container .portfolio_div img{
+	width: 220px;
+	height: 155px;
+}
+#portfolio_container .portfolio_div_container{	
+	height: 155px; 
+	width: 220px;	
+	margin: 0 15px 15px 0;
+	float: left;
+	padding: 5px;
+	overflow: hidden;	
+	position: relative;
+	background-color: #000;
+	border: solid 1px #410700;
+}
+#portfolio_container .portfolio_div_container .portfolio_div{
+	height: 155px;
+	width: 220px;			
+	overflow: hidden;	
+	position: relative;
+}
+#portfolio_container .portfolio_div .info_container{	
+	width: 230px;
+	height: 100px;		
+	top: 100px;		
+	z-index: 0;
+	position: relative;	
+}
+#portfolio_container .portfolio_div div.info{
+	position:relative;	
+	width:220px;
+	top:-100px;
+	z-index:100;
+	height:90px;
+	color:#FFF;
+	padding:5px;	
+	line-height:14px;
+}
+#portfolio_container .portfolio_div div.info p{
+	font-size: 11px;
+	padding-left:0;
+	padding-top: 0;
+	margin-top: 0;
+}
+#portfolio_container .portfolio_div div.info h3{
+	font-size: 11px;
+	font-weight: bold;
+	padding-left:0;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#portfolio_container .portfolio_div div.info a{
+	color:#ca1e00;
+	text-decoration:none;
+	font-family:arial,helvetica;
+	font-weight:bold;
+	outline:none;
+	background-color: #000;
+}
+#portfolio_container .portfolio_div div.info_bg{	
+	position:relative;	
+	background-color:#000;
+	width:230px;	
+	z-index:50;
+	top:-200px;
+	height:100px;		
+	opacity:0.8;
+}
+
+

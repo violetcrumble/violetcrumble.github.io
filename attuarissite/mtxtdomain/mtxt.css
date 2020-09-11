@@ -1,0 +1,87 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	background-color: #51a1f3;
+}
+
+div#main {
+	width: 828px;
+	height: 747px;
+	background: url("images/bg.gif") top no-repeat;
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+p, input, label, textarea {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 0 40px 0 40px;
+}
+
+/* ----------- FORM ----------- */
+.myform{
+margin:0 auto;
+width:480px;
+padding:14px;
+margin-bottom: 15px;
+}
+
+#stylized{
+width: 480px;
+margin: 0 auto 0 auto;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:300px;
+margin:2px 0 20px 10px;
+}
+
+#stylized textarea{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:300px;
+height: 100px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+clear:both;
+margin-left:150px;
+width:171px;
+height:45px;
+background-color: #0066CC;
+border: solid 1px;
+color: #FFF;
+}

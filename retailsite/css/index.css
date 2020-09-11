@@ -1,0 +1,1023 @@
+﻿@font-face {
+    font-family: 'caecilia';
+    src: url('../fonts/caecilialtstd-roman-webfont.eot');
+    src: url('../fonts/caecilialtstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caecilialtstd-roman-webfont.woff') format('woff'),
+         url('../fonts/caecilialtstd-roman-webfont.ttf') format('truetype'),
+         url('../fonts/caecilialtstd-roman-webfont.svg#caecilia_lt_std55_roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('../fonts/opensans-semibolditalic-webfont.eot');
+    src: url('../fonts/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../fonts/pt_sans-web-bold-webfont.eot');
+    src: url('../fonts/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans-web-bold-webfont.woff') format('woff'),
+         url('../fonts/pt_sans-web-bold-webfont.ttf') format('truetype'),
+         url('../fonts/pt_sans-web-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: open_sansregular;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+body {
+    background: url("../images/bg-page.jpg") top center no-repeat;
+    /* background: url("../images/bg-page.jpg") top center no-repeat, url("../images/bg-grass.png") 0 427px repeat-x; */
+    background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 1140px) {
+    body { background: url("../images/bg-page.jpg") 0px -30px no-repeat; }
+    section#listing_links { height: 440px; }
+}
+
+@media screen and (max-width: 1000px) {
+    body { background: url("../images/bg-page.jpg") 0px -60px no-repeat; }
+    section#listing_links { height: 420px; }
+}
+
+@media screen and (max-width: 935px) {
+    body { background: url("../images/bg-page.jpg") 0px -90px no-repeat; }
+     section#listing_links { height: 390px; }
+}
+
+@media screen and (max-width: 790px) {
+    body { background: url("../images/bg-page.jpg") 0px -150px no-repeat; }
+    section#listing_links { height: 340px; }
+}
+
+/* CONTAINS STUFF WE DON'T WANT GOING ALL THE WAY ACROSS ON DESKTOP SIZE, 960px and UP */
+#nav_container #nav_main, #store_header_inside, #billboard, #listing_promos, #map_about_inside {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+header#store_header {
+    background: url("../images/bg-header.png") top center no-repeat;
+    clear: both;
+    height: 145px;
+    padding-top: 45px;
+}
+
+    header#store_header div#store_name {
+        float: left;
+        margin-top: 30px;
+        width: 50%;
+    }    
+
+            header#store_header div#store_name img {
+                float: left;
+                padding-right: 5px;
+            }
+    
+            header#store_header div#store_name h1 {
+                color: #0796de;
+                font: 26px pt_sansbold;
+            }
+
+            header#store_header div#store_name h2 {
+                color: #b9b9b9;
+                font: 14px open_sanssemibold_italic;
+                margin-top: -5px;
+                text-transform: uppercase;
+            }
+
+    header#store_header address {
+        color: #606060;
+        float: right;
+        font-size: 14px;
+        margin-top: 35px;
+        padding-right: 10px;
+        text-align: right;
+        width: 40%;
+    }
+
+        header#store_header address span.store_phone {
+            color: #4fc0f4;
+            display: block;
+            font: 16px open_sansbold;
+        }
+
+            header#store_header address span a {
+                color: #606060;
+                text-decoration: none;
+            }
+
+            
+
+#billboard {
+    clear: both;
+}
+
+    #listing_links {
+        background: url("../images/bg-house.png") center bottom no-repeat;
+        background-size: 100%;
+        float: left;
+        width: 35%;
+        height: 467px;
+    }
+
+        #listing_links ul {
+            padding-left: 20px;
+        }
+
+        #listing_links ul li {
+            height: 70px;
+            padding: 20px 0 0 0;
+        }
+
+            #listing_links ul li a:link, #listing_links ul li a:visited, #listing_links ul li a:hover, #listing_links ul li a:active {
+                color: #0796DE;
+                font: 16px open_sansbold;
+                text-decoration: none;
+            }
+
+            #listing_links ul li div {
+                background-color: #E8E8E8;
+                color: #0796DE;
+                float: left;
+                font: 14px open_sansbold;
+                margin-right: 10px;
+                padding: 2px;
+                text-align: right;
+                width: 40px;
+            }
+
+    #slideshow {
+        float: right;
+        text-align: left;
+        width: 65%;
+    }
+
+        #slideshow img {
+            width: 100%;
+        }
+
+        ul#slideshow_nav {
+            margin-top: -2px;
+        }
+
+            ul#slideshow_nav li {
+                float: left;
+                width: 25%;
+            }
+
+            ul#slideshow_nav li a:link, a:visited, ul#slideshow_nav li a:hover, ul#slideshow_nav li a:active {
+                background-color: #41afe8;
+                border: solid 2px #fff;
+                color: #fff;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+            }
+
+
+/* MAIN HEADINGS FOR HOME PAGE CONTENT AREA */
+section#promos h1.main_heading, section#listings h1.main_heading, section#map_directions h1.main_heading, article#about_us h1.main_heading {
+    color: #2f2f2f;
+    padding: 24px 0 70px 71px;
+}
+
+    section#promos h1.main_heading { background: url("../images/bg-icon-promotions.gif") top left no-repeat; }
+    section#listings h1.main_heading { background: url("../images/bg-icon-listing.gif") top left no-repeat; }
+    section#map_directions h1.main_heading { background: url("../images/bg-icon-directions.gif") top left no-repeat; text-align: left; }
+    article#about_us h1.main_heading { background: url("../images/bg-icon-about.gif") top left no-repeat; }
+
+/* HOME PAGE LISTINGS AND PROMOS */
+#listing_promos {
+    clear: both;
+    padding-top: 50px;
+}
+
+    #promos {
+        float: left;
+        width: 23%;
+    }
+
+        #promos article.promo {
+            clear: both;
+            padding-bottom: 23px;
+        }    
+    
+            #promos article.promo a {
+                text-decoration: none;
+            }
+            
+                #promos article.promo h1 {
+                    color: #3a95df;   
+                    font: 15px caecilia;
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                    }
+
+                    #promos article.promo img.promo_img {
+                        background-color: #fff;
+                        border: solid 1px #d4d4d4;
+                        float: left;
+                        margin-right: 15px;
+                        padding: 4px;
+                    }
+
+    #listings {
+        float: right;
+        width: 76%;
+    }
+
+        #listing_view_form {
+            height: 50px;
+        }
+
+            #listing_view_form p {
+                color: #0796DE;
+                float: left;
+                padding-left: 10px;
+            }
+
+            #listing_view_form p.form {
+                padding-left: 30px;
+            }
+
+        section.home_listing {
+            background-color: #fff;
+            -webkit-box-shadow:  1px 1px 4px 1px #C1C1C1;
+            box-shadow:   1px 1px 4px 1px #c1c1c1;
+            float: left;
+            margin-bottom: 20px;
+            width: 48%;
+            position: relative;
+        }
+
+        section.home_listing:nth-child(odd) {  
+            margin-right: 20px;
+        }
+
+            section.home_listing figure.home_image img {
+                width: 100%;
+            }
+
+            section.home_listing .home_listing_overlay {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 1;
+            }
+
+                section.home_listing .home_listing_overlay img {
+                    width: 100px;
+                }
+
+            section.home_listing figure.home_image figcaption h1 {
+                color: #555;
+                font: 15px open_sansbold;
+                padding-top: 30px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            section.home_listing figure.home_image figcaption p {
+                color: #807f7f;
+                font: 12px open_sansregular;
+                margin: 0 24px;
+                text-align: center;
+            }
+
+            section.home_listing .details_link {
+                color: #3a95df;
+                display: block;
+                font: 12px open_sansregular;
+                margin: 0 24px;
+                text-align: center;
+            }
+
+            section.home_listing .home_price {
+                background: url("../images/bg-price.gif") center center repeat-x;
+                display: block;
+                margin: 24px 24px 24px 24px;
+                text-align: center;
+            }
+
+                section.home_listing .home_price span {
+                    background-color: #fff;
+                    color: #8cd13d;
+                    font: 19px open_sansbold;
+                }
+
+            section.home_listing .home_specs {
+                color: #555;
+                font: 12px open_sansregular;
+                padding: 0 0 24px 0;
+                text-align: center;
+            }
+                
+                section.home_listing .home_specs .sq_ft {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                
+                    section.home_listing .home_specs .beds {
+                    background: url("../images/listing-icon-beds.gif") top right no-repeat;
+                    display: inline-block;
+                    margin-right: 10px;
+                    padding-right: 25px;
+                }
+
+                section.home_listing .home_specs .baths {
+                    background: url("../images/listing-icon-baths.gif") top right no-repeat;
+                    display: inline-block;
+                    padding-right: 17px;
+                }
+
+/* HOME PAGE MAP, DIRECTIONS, ABOUT US */
+#map_about {
+    background: url("../images/bg-top-map-about.gif") top repeat-x #fff;
+    clear: both;
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+    #map_about_inside {
+        padding-top: 47px;
+    }
+
+        #map_directions {
+            float: left;
+            width: 30%;
+            text-align: center;
+        }
+
+            #map_directions h2  {
+                margin-left: 60px;
+            }
+        
+            #map_directions img#map {
+                margin: 55px 0 60px 0;
+            }
+        
+            #map_directions table#hours {
+                margin-left: 60px;
+            }
+            
+            #map_directions table#hours tr:nth-child(odd) {
+                background-color: #e4e9ee;
+            }
+
+                #map_directions table#hours td {
+                    padding: 5px;
+                    text-align: left;
+                }
+
+        #about_us {
+            float: right;
+            width: 60%;
+        }
+
+            #about_us h2, #map_directions h2 {
+                color: #179cdf;
+                font: 18px caecilia;
+                text-align: left;
+            }
+
+            #about_us h1 {
+                margin-bottom: 55px;
+            }
+            
+            #about_us p {
+                font-size: 14px;
+                line-height: 200%;
+                margin-bottom: 15px;
+            }
+
+/* FOOTER */
+footer {
+    background-color: #06a3ea;
+}
+
+    footer #contact_info {
+        background-color: #0576a9;
+        color: #fff;
+        height: 150px;
+        padding-left: 10px;
+    }
+
+        footer #contact_info address, footer #contact_info #phone_email {
+            float: left;
+            margin-top: 45px;
+        }
+
+        footer #contact_info #legal_privacy {
+            float: right;
+            margin-top: 25px;
+        }
+
+        footer #contact_info address {
+            color: #d6d0d0;
+            font-size: 12px;
+        }
+
+            footer #contact_info address span {
+                color: #fff;
+                display: block;
+                font: 18px open_sansbold;
+                margin-bottom: 5px;
+            }
+
+        footer #contact_info #phone_email {
+           padding-left: 70px;
+        }
+
+            footer #contact_info #phone_email li#footer_email {
+                background: url("../images/footer-icon-email.png") top left no-repeat;
+                padding-left: 30px;
+            }
+
+            footer #contact_info #phone_email li#footer_phone {
+                background: url("../images/footer-icon-phone.png") top left no-repeat;
+                padding: 0 0 10px 30px;
+            }
+
+            footer #contact_info #phone_email li#footer_email a, footer #contact_info #phone_email li#footer_phone a, footer #contact_info #phone_email li#footer_email, footer #contact_info #phone_email li#footer_phone {
+                color: #fff;
+                font: 16px open_sansbold;
+            }
+
+        footer #contact_info #legal_privacy {
+           text-align: right;
+        }
+
+            footer #contact_info #legal_privacy #footer_logo {
+                margin-bottom: 30px;
+                margin-right: 10px;
+            }
+        
+            footer #contact_info #legal_privacy a {
+                color: #fff;
+                font-size: 12px;
+                text-decoration: none;
+            }
+
+            footer #contact_info #legal_privacy p {
+                margin-right: 10px;
+            }
+
+            footer #contact_info #legal_privacy p#copyright {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+
+
+
+/* 1510px and up  */
+ @media screen and (min-width: 1510px) {
+   #listing_promos {
+       max-width: none;
+   }
+
+
+   section.home_listing {
+        width: 23%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+   section#promos h1.main_heading { 
+           margin-left: 20px;
+       }
+
+   #promos article.promo  {
+       clear: none;
+       float: left;
+       padding-left: 20px;
+       width: 220px;
+   }
+}
+
+/* 1141px - 1240px  */
+@media screen and (min-width: 1141px) and (max-width: 1240px) {
+    #logo {
+        padding-right: 10px;
+    }
+
+    section#promos { 
+           margin-left: 10px;
+       }
+}
+
+/* 941px - 1140px  */
+@media screen and (min-width: 941px) and (max-width: 1140px) {
+    
+    #logo {
+        padding-right: 10px;
+    }
+    
+    #slideshow {
+        float: left;
+        text-align: left;
+        width: 60%;
+        padding-right: 10px;
+    }
+
+            ul#slideshow_nav li {
+                width: 50%;
+            }
+
+        section#listings h1.main_heading { 
+           margin-left: 20px;
+       }
+
+            #listings {
+                clear: both;
+                width: 100%;
+            }
+
+                section.home_listing {
+                    width: 30%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                section.home_listing:nth-child(even) {  
+                    margin-right: 10px;
+                }
+
+            #promos {
+                width: 100%;
+            }
+
+                #promos article.promo {
+                    clear: none;
+                    float: left;
+                    width: 25%;
+                }
+}
+
+/* 741px - 940px */
+@media screen and (min-width: 741px) and (max-width: 940px) {
+    
+    #logo {
+        padding-right: 10px;
+    }
+    
+    #slideshow {
+        float: left;
+        text-align: left;
+        width: 60%;
+        padding-right: 10px;
+    }
+
+            ul#slideshow_nav li {
+                width: 50%;
+            }
+
+    section#listings h1.main_heading { 
+       margin-left: 20px;
+   }
+
+            #listings {
+                clear: both;
+                width: 100%;
+            }
+
+                section.home_listing {
+                    width: 48%;
+                }
+
+            #promos {
+                width: 100%;
+            }
+
+                #promos article.promo {
+                    clear: none;
+                    float: left;
+                    width: 25%;
+                }
+}
+
+/* 740px and less */
+@media screen and (max-width: 740px) {
+    body {
+        background: none;
+    }
+
+    section#promos h1.main_heading, section#listings h1.main_heading, section#map_directions h1.main_heading, article#about_us h1.main_heading {
+        background: none;
+        color: #8CD13D;
+        display: inline;
+        font: 14px open_sansbold;
+        padding-left: 10px;
+    }
+    
+    header#store_header, header#store_header address, div#store_name, #listings, #slideshow, #promos, #map_directions, #about_us {
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header#store_header {
+        background: none;
+        height: 111px;
+    }
+
+        header#store_header div#store_name {
+            clear: both;
+            height: 57px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+            header#store_header div#store_name img {
+                margin-left: 10px;
+            }
+
+            header#store_header div#store_name h1 {
+                color: #0796DE;
+                font: 22px pt_sansbold;
+            }
+
+
+        header#store_header address {
+            background: #eff8fc; /* Old browsers */
+            background: -moz-linear-gradient(top, #eff8fc 0%, #ffffff 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eff8fc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #eff8fc 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #eff8fc 0%,#ffffff 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #eff8fc 0%,#ffffff 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #eff8fc 0%,#ffffff 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff8fc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+            display: block;
+            margin: 0;
+            padding: 5px 0;
+            text-align: left;
+        }
+
+            header#store_header address span {
+                display: block;
+                padding-left: 58px;
+            }
+
+    section#listing_links {
+        background: none;
+        height: 100px;
+        width: 100%;
+    }
+
+    #listing_links ul {
+        padding-left: 0;
+    }
+
+        #listing_links ul li {
+            background-color: #4fc0f4;
+            height: 20px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+            #listing_links ul li a:link, #listing_links ul li a:visited, #listing_links ul li a:hover, #listing_links ul li a:active {
+                color: #fff;
+                font: 14px open_sansbold;
+                text-decoration: none;
+            }
+
+    #listing_view_form p.form {
+        display: none;
+    }
+
+    #listings {
+        padding-top: 60px;
+    }
+
+    section.home_listing {
+        clear: both;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    section.home_listing {
+        margin-right: 0;
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    #listing_promos {
+        padding-top: 0;
+    }
+
+        #listing_view_toggle {
+            display: none;
+        }
+
+        #promos article.promo {
+            min-height: 100px;
+            padding: 10px;
+            width: 275px;
+        }
+    
+    #map_about {
+        background: none;
+    }
+
+    #about_us {
+        clear: both;
+        float: left;
+        text-align: left;
+    }
+    
+        #about_us h2, #map_directions h2 {
+            padding-left: 10px;
+            font-size: 15px;
+            clear: both;
+            display: block;
+            text-align: left;
+        }
+
+        #about_us p {
+            padding-left: 10px;
+        }
+
+        #map_directions table#hours {
+            padding: 0;
+            margin: 0 auto;
+            width: 95%;
+        }
+
+        #map_about_inside {
+            padding-top: 10px;
+        }
+        
+        section#map_directions h1.main_heading {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        #map_directions img#map {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        section#map_directions h1.main_heading {
+            padding-top: 0;
+            padding-bottom: 0;
+            text-align: left;
+        }
+
+        #about_us h2, #map_directions h2 {
+            color: #8CD13D;
+            font: 14px open_sansbold;
+            padding-left: 10px;
+        }
+
+
+
+
+        footer {
+            display: none;
+        }
+}
+
+
+/* 740px and less in landscape mode */
+@media screen and (max-width: 740px) and (orientation: landscape) {
+
+header#store_header {
+    height: 73px;
+}
+
+    header#store_header div#store_name {
+        height: 30px;
+        margin-top: 5px;
+    }
+
+        div#store_name img {
+            width: 25px;
+        }
+
+        header#store_header div#store_name h1 {
+            font-size: 18px;
+            float: left;
+            margin-right: 5px;
+            margin: 2px 5px 0 0;
+        }
+
+        header#store_header div#store_name h2 {
+            float: left;
+            margin-top: 2px;
+        }
+
+        header#store_header address span.store_phone {
+            float: left;
+        }
+
+        header#store_header address span {
+            padding-top: 3px;
+        }
+
+        header#store_header address span.store_phone {
+            padding: 0 10px;
+        }
+
+section#listings h1.main_heading {
+        clear: both;
+        display: block;
+        float: left;
+        height: 20px;
+        padding: 0 0 0 10px;
+    }
+    
+section#listing_links {
+   height: 55px;
+}
+
+    #listing_links ul {
+       
+    }
+
+    #listing_links ul li {
+        float: left;
+        height: 40px;
+        width: 29%;
+        padding: 2px;
+    }
+
+        #listing_links ul li div {
+            background-color: #0796DE;
+            color: #fff;
+            padding: 10px 5px;
+            width: auto;
+        }
+
+        #listing_links ul li a#listing_link_used {
+            position: relative;
+            top: 10px;
+        }
+
+#listing_view_form {
+    height: 20px;
+}
+
+#listing_view_form p {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+#listings {
+    clear: both;
+    float: left;
+    padding-top: 0;
+}
+
+section.home_listing {
+   clear: both;
+   margin: 10px auto;
+   width: 100%;
+}
+
+section.home_listing .swipe {
+    float: left;
+    margin: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+
+section.home_listing figure.home_image figcaption h1 {
+    font: 12px open_sansbold;
+    padding-top: 5px;
+    text-align: left;
+}
+
+
+section.home_listing figure.home_image figcaption p, section.home_listing .details_link {
+    font: 10px open_sansregular;
+    text-align: left;
+}
+
+section.home_listing .home_price span {
+    font-size: 12px;
+}
+
+
+section.home_listing .home_price {
+    margin: 3px;
+}
+
+#about_us p {
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+}

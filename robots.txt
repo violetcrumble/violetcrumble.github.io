@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /attuarissite/
+Disallow: /dadcards/
+Disallow: /stuff/
+Disallow: /websites/
+Disallow: /wordpresstest/
