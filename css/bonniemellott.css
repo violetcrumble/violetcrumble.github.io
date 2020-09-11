@@ -173,6 +173,7 @@ section.side_blurbs {
 footer {
   background-color: #000;
   margin-top: 10px;
+  padding: 10px 0 30px 0;
 }
 
 .stalking h2 {
