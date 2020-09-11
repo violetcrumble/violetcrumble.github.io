@@ -7,25 +7,6 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/bonniemellott.css" rel="stylesheet">
 
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/html5shiv.js"></script>
-<script src="js/response.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jseasing.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-        var hover_in_easing="easeOutExpo";
-        var hover_out_easing="easeOutBounce";
-        $(".info_container").show();
-        $("div.portfolio_div").hover(function(){
-                $(this).find(".info_container").animate({top:"0px"},{duration: 400, easing: hover_in_easing});},function(){
-                $(this).find(".info_container").animate({top:"100px"},{duration: 500, easing: hover_out_easing});
-        });
-        // The 100 px is the size of the mask
-});
-</script>
-
 <meta name="google-site-verification" content="0EQY1Nw3WluqJtDWcLifSNxI6dhF-NCPf2dta5pxG2Y" />
 
 <script type="text/javascript">
@@ -75,6 +56,73 @@ $(document).ready(function(){
     <div class="container">
 
     <h1>Web Design Portfolio</h1>
+
+     <!---carousel--->
+     <div class="hidden-xs carousel slide container">
+
+        <section class="carousel-inner">
+            
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> Brant McCaskill Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, CSS, HTML, JavaScript</p>
+                    <a target="_blank" href="http://www.bonniemellott.com/brant/">click here to view this project</a>
+                </div>
+                <img src="images/features/05.jpg" alt="Feature 05">
+            </div>
+            
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> The Stylish Slice Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, CSS, HTML</p>
+                    <a target="_blank" href="http://www.thestylishslice.com">click here to view this project</a>
+                </div>
+                <img src="images/features/06.jpg" alt="Feature 06">
+            </div>
+            
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> Attuaris Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, CSS, HTML, PHP</p>
+                    <a target="_blank" href="attuarissite/index.html">click here to view this project</a>
+                </div>
+                <img src="images/features/02.jpg" alt="Feature 02">
+            </div>
+            
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> Miele Brothers Management Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, CSS, HTML</p>
+                    <a target="_blank" href="websites/mielebros/index.html">click here to view this project</a>
+                </div>
+                <img src="images/features/01.jpg" alt="Feature 01">
+            </div>
+
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> The Center for Natural Breast Reconstruction Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, CSS, HTML</p>
+                    <a target="_blank" href="websites/naturalbreast/index.html">click here to view this project</a>
+                </div>
+                <img src="images/features/03.jpg" alt="Feature 03">
+            </div>
+            
+            <div class="active item">
+                <div class="carousel-info-box">
+                    <p><strong>Project:</strong><br> Dentistry for Little Folks Web Site</p>
+                    <p><strong>Tools Used:</strong><br> Photoshop, Illustrator, CSS, HTML</p>
+                    <a target="_blank" href="websites/dentistryforlittlefolks/index.html">click here to view this project</a>
+                </div>
+                <img src="images/features/04.jpg" alt="Feature 04">
+            </div>
+            
+            
+        
+        </section>
+        
+        
+    </div>
+    <!---/carousel--->
 
     
     <!--portfolio_div_container-->
@@ -592,8 +640,18 @@ $(document).ready(function(){
         <div class="container">
             <!---row2--->
             <div class="row">
-                
-                <div class="col-md-4 stalking">
+
+                <div class="col-md-6 footer_nav">
+                    <ul>
+                      <li class="col-sm-3"><a href="index.html">Home</a></li>
+                      <li class="col-sm-3"><a href="portfolio.html">Portfolio</a></li>
+                      <li class="col-sm-3"><a href="about.html">About Me</a></li>
+                      <li class="col-sm-3"><a href="contact.html">Contact</a></li>
+                    </ul>
+              </div>
+
+
+                <div class="col-md-6 stalking">
                     <h2>stalk me:</h2>
                     <a href="http://www.facebook.com/bonnie.mellott" target="_blank">
                         <img src="images/social_icons/facebook.png" alt="Facebook" border="0" />
@@ -606,35 +664,14 @@ $(document).ready(function(){
                     </a>
                     <a href="http://www.flickr.com/cheesequeen/" target="_blank">
                         <img src="images/social_icons/flickr.png" alt="Flickr" border="0" />
-                    </a>
-                </div>
-                
-                <div class="col-md-8 pictures">
-                    <h2>my latest pictures</h2>
-                    
-                    
-                    <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=s&layout=h&source=user_set&user=18138517%40N00&set=72157607526265224&context=in%2Fset-72157607526265224%2F"></script>
-
-                    
-                    </table>
-                </div>
-            
-            </div>
-            <!---/row2--->
+                    </a> 
         </div>
     </footer>
     
     <div class="container">
         <div class="row">
-            <div class="col-md-6 copyright">Copyright &copy; 2013 Bonnie Mellott</div>
-            <div class="col-md-6 footer_nav">
-                  <ul>
-                    <li class="col-sm-3"><a href="index.html">Home</a></li>
-                    <li class="col-sm-3"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="col-sm-3"><a href="about.html">About Me</a></li>
-                    <li class="col-sm-3"><a href="contact.html">Contact</a></li>
-                  </ul>
-            </div>
+            <div class="copyright">Copyright &copy; 2020 Bonnie Mellott</div>
+            
         </div>
     </div>
 

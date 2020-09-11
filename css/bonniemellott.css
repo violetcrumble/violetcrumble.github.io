@@ -88,45 +88,7 @@ header {
                 background-color: #1e1e1e;
             }
 
-#main {
-    
-}
-    #myCarousel {
-        margin-top: 20px;
-    }
-        
-        div.carousel-info-box {
-            background-color: #000;
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 10px 40px 0 0 ;
-            width: 40%;
-            height: 90%;
-            z-index: 1000;
-        }
-        
-            div.carousel-info-box p {
-                margin: 20px;
-                font-size: 10px;
-            }
-        
-            div.carousel-info-box a {
-                background-color: #720B00;
-                color: #fff;
-                display: block;
-                width: 100%;
-                padding: 5px 0;
-                position: relative;
-                top: 20px;
-                font: 16px lt_oksanaregular;
-                text-align: center;
-            }
-    
-        .carousel-indicators {
-            bottom: -32px;
-        } 
-        
+   
     #main h2{
         font-size: 14px;
     }
@@ -135,10 +97,6 @@ header {
         color: #d82000;
     }
     
-#sidebar {
-
-}
-       
     section.side_blurbs {
         background-color: #000;
         padding-bottom: 10px;
@@ -172,21 +130,29 @@ footer {
     margin-top: 10px;
 }
 
-    .stalking h2, .pictures h2 {
+    .stalking h2 {
         color: #d82000;
         font: 15px lt_oksanaregular;
     }
-    
-    .pictures img {
-        margin: 0 10px 10px 0;
-    }
-    
-    .copyright, .footer-nav {
+   
+    .copyright {
         color: #fff;
+        margin: 20px 0;
+    }
+
+    .footer_nav {
+        text-align: left;
+        padding-top: 27px;
+        padding-left: 0;
+    }
+
+    .footer_nav ul {
+        padding-left: 0;
     }
     
     .footer_nav ul li {
         list-style-type: none;
+        padding-left: 0;
     }
 
 /******PORTFOLIO PAGE******/
