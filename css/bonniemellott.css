@@ -53,7 +53,7 @@ header {
 }
 
 .container-portfolio-project img {
-  max-width: 1470px;
+  max-width: 100%;
 }
 
 #logo {
