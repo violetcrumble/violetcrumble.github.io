@@ -43,7 +43,7 @@ h1 {
 .portfolio-project h3 {
   padding: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 10px;
 }
 a:link,
@@ -168,7 +168,7 @@ footer {
 }
 
 .stalking h2 {
-  color: #d82000;
+  color: #fff;
   font: 15px lt_oksanaregular;
 }
 
