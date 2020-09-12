@@ -230,12 +230,16 @@ a.carousel-project-button:visited {
   background-color: #720b00;
   color: #fff;
   font-size: 22px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   border: none;
   transition: 450ms;
   float: right;
-  margin-top: 15px;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 a.carousel-project-button:hover,
 a.carousel-project-button:active {
