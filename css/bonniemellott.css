@@ -67,9 +67,21 @@ header {
 .container-portfolio-project img {
   max-width: 100%;
 }
-
+.container-portfolio-project a.portfolio-button:link,
+.container-portfolio-project a.portfolio-button:visited {
+  background-color: #000;
+  color: white;
+  transition: 450ms;
+  padding: 10px;
+  font-size: 18px;
+  border: solid 1px #fff;
+}
+.container-portfolio-project a.portfolio-button:hover,
+.container-portfolio-project a.portfolio-button:active {
+  background-color: #1e1e1e;
+}
 #logo {
-  max-width: 100%;
+  max-width: 295px;
   margin-top: 30px;
 }
 
