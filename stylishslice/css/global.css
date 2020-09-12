@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+    font-family: 'montserrat_alternatesregular';
+    src: url('montserratalternates-regular-webfont.eot');
+    src: url('montserratalternates-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('montserratalternates-regular-webfont.woff') format('woff'), 
+         url('montserratalternates-regular-webfont.ttf') format('truetype'), 
+          url('montserratalternates-regular-webfont.svg#montserrat_alternatesregular') format('svg'); 
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, input, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'montserrat_alternatesregular';
+	color: #333;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Site-specific */
+body {
+	background-image: url(../images/bg-page.jpg);
+}
+
+h1 {
+	color: #d67372;
+}
+
+a:link, a:visited {
+	color: #648d93;
+}
+
+	a:hover, a:active {
+		text-decoration: none;
+	}
+	
+dt strong {
+		color: #648d93;
+	}
+	
+.clear {
+	clear: both;
+}
+
+#header_container {
+	background-image: url(../images/bg-scallop.png);
+	min-width: 990px;
+}
+
+	#header {
+		height: 254px;
+		margin: 0 auto;
+		text-align: center;
+		width: 990px;
+	}
+	
+		#header img#logo {
+			margin: 0 100px;
+		}
+	
+		#nav {
+			margin: 28px auto 0 auto;
+			text-align: left;
+			width: 990px;
+		}
+		
+			#nav ul li {
+				display: inline;
+				margin: 0 auto;
+			}
+			
+				#nav ul li a:link, #nav ul li a:visited {
+					border: solid 1px #a0dee7;
+					border-bottom: none;
+					-webkit-border-top-left-radius: 10px;
+					-webkit-border-top-right-radius: 10px;
+					-moz-border-radius-topleft: 10px;
+					-moz-border-radius-topright: 10px;
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+					color: #333;
+					display: inline-block;
+					margin-right: 20px;
+					padding: 8px 14px 11px 14px;
+					text-decoration: none;
+				}
+				
+					#nav ul li a:hover, #nav ul li a:active, #nav ul li a.current:link, #nav ul li a.current:visited, #nav ul li a.current:hover, #nav ul li a.current:active {
+						background: -moz-linear-gradient(top,  rgba(247,250,252,0) 0%, rgba(181,221,230,1) 100%); /* FF3.6+ */
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,250,252,0)), color-stop(100%,rgba(181,221,230,1))); /* Chrome,Safari4+ */
+						background: -webkit-linear-gradient(top,  rgba(247,250,252,0) 0%,rgba(181,221,230,1) 100%); /* Chrome10+,Safari5.1+ */
+						background: -o-linear-gradient(top,  rgba(247,250,252,0) 0%,rgba(181,221,230,1) 100%); /* Opera 11.10+ */
+						background: -ms-linear-gradient(top,  rgba(247,250,252,0) 0%,rgba(181,221,230,1) 100%); /* IE10+ */
+						background: linear-gradient(to bottom,  rgba(247,250,252,0) 0%,rgba(181,221,230,1) 100%); /* W3C */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f7fafc', endColorstr='#b5dde6',GradientType=0 ); /* IE6-9 */
+						background-color: #fff;
+					}
+					
+					#nav ul li a.current:link, #nav ul li a.current:visited, #nav ul li a.current:hover, #nav ul li a.current:active {
+						border-color:#77a0ab;
+					}
+					
+	
+					
+#content_container {
+	background: url(../images/bg-lightgrey.png);
+	min-width: 990px;
+}
+
+		#content {
+			margin: 0 auto;
+			width: 990px;
+		}
+		
+			/*home page specific*/
+			#cake_gallery {
+				float: left;
+				padding-right: 20px;
+				padding-top: 43px;
+				width: 450px;
+				height: 560px;
+			}
+			
+				#cake_gallery a {
+					position: relative;
+					top: -60px;
+				}
+	
+			#content h1 {
+				border-bottom: dotted 2px;
+				font-size: 20px;
+				margin-bottom: 10px;
+				padding-top: 20px;
+			}
+			
+				/*home page specific*/
+				#content h1.home {
+					border-bottom: none;
+					padding-top: 63px;
+				}
+			
+			#content p {
+				line-height: 160%;
+				margin-bottom: 20px;
+			}
+			
+#footer_container {
+	clear: both;
+	background: url(../images/bg-footer.png) top repeat-x;
+	min-width: 990px;
+	min-height: 45px;
+}
+
+	#footer {
+		margin: 0 auto;
+		padding-top: 50px;
+		width: 990px;
+	}
+
+		#footer_left {
+			float: left;
+		}
+		
+			#footer_left ul {
+				width: 300px;
+				padding-bottom: 20px;
+			}
+			
+				#footer_left ul li {
+					display: inline;
+					float: left;
+					margin: 0 50px 20px 0;
+					width: 90px;
+				}
+				
+				#footer_left a:link, #footer_left a:visited {
+					font-size: 14px;
+				}
+				
+					#footer_left a:hover, #footer_left a:active {
+						text-decoration: none;
+					}
+				
+			#footer_left p {
+				clear: both;
+				font-size: 14px;
+				padding: 20px 0 20px 0;
+			}
+		
+		#footer_right {
+			float: right;
+		}
+		
+				#footer_right #social_facebook {
+					background: url(../images/icon-facebook.png) left no-repeat;
+					display: block;
+					padding: 0 0 20px 40px;
+				}
+				
+				#footer_right #social_pinterest {
+					background: url(../images/icon-pinterest.png) left no-repeat;
+					display: block;
+					padding: 20px 0 20px 40px;
+				}
+		
+		#footer a:link, #footer a:visited {
+			color: #613333;
+		}
+		
+			#footer a:hover, #footer a:active {
+				text-decoration: none;
+			}

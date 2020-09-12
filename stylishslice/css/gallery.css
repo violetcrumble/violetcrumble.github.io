@@ -1,0 +1,40 @@
+ul.thumb {
+	float: left;
+	list-style: none;
+	margin: 0; padding: 0;
+	width: 375px;
+}
+ul.thumb li {
+	margin: 0; padding: 5px;
+	float: left;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+ul.thumb li img {
+	width: 70px; height: 70px;
+	border: 1px solid #ddd;
+	padding: 3px;
+	background: #f0f0f0;
+	position: absolute;
+	left: 0; top: 0;
+	-ms-interpolation-mode: bicubic; 
+}
+ul.thumb li img.hover {
+	background:url(thumb_bg.png) no-repeat center center;
+	border: none;
+}
+
+#main_view {
+	float: right;
+	padding-bottom: 30px;
+}
+	#main_view img {
+		border: 1px solid #ddd;
+		padding: 5px;
+		background: #f0f0f0;
+	}
+	
+#hidden {
+	display: none;
+}

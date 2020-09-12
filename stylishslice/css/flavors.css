@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#cake_flavors, #icing_flavors {
+	float: left;
+}
+
+#cake_flavors {
+	border-right: dotted 1px #648d93;
+	margin-right: 30px;
+	padding-right: 30px;
+}
+
+	#cake_flavors h2, #icing_flavors h2 {
+		border-bottom: dotted 1px #648d93;
+		color: #648d93;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	
+	#cake_flavors h3, #icing_flavors h3 {
+		color: #D67372;
+		margin-bottom: 10px;
+	}
+	
+	#cake_flavors ul, #icing_flavors ul {
+		padding-left: 30px;
+	}
+		
+		#cake_flavors ul li, #icing_flavors ul li {
+			list-style-type: disc;
+			margin-bottom: 10px;
+		}
+		
+
+#icing_flavors_column {
+	float: left;
+	margin-right: 20px;
+}
+
+	

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+dd {
+	margin-bottom: 20px;
+}
+
+	dt strong {
+		color: #D67372;
+	}
