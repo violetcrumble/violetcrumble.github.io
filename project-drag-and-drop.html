@@ -58,29 +58,24 @@
     <!--main_container-->
     <div class="container container-portfolio-project">
 
-    <p class="portfolio-breadcrumb"><a href="/" >Home</a> : <a href="portfolio.html" >Projects</a> : React Component Library </p>
-
-    <h1>React Component Library Case Study</h1>
+    <p class="portfolio-breadcrumb"><a href="/" >Home</a> : <a href="portfolio.html" >Projects</a> : Drag and Drop Home Search </p>
 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
+            <h1>Drag and Drop Home Search Interface Prototype</h1>
+        <p>I created this long ago, back in 2015. I didn't use any kind of framework - it's vanilla JS with a drag and drop and touch detection plugin. This repo can be cloned and if you go to index.html, you can search for homes by dragging the rooms on the right to the grid on the left. This was a proof of concept. If I were to redo this project today, I would definitely not use jQuery. I cringe at the way everything is in the one draganddrop.js file and not in components. However, I do like that I wrote it as a simple plugin that could be dropped into any website or landing page.</p>
 
-            <p>A couple years ago, at Clayton Homes, front end projects were inconsistent in terms of design, and had lots of duplicated code, which caused lots of duplicate work and wasted time. I noticed 5 different versions of what should be the same button on a single project - one might have a slightly different shade of blue, while one may have a slight gradient and a 3px border radius instead of 5px. These things may seem trivial to some developers, but as a dev who has a background in design, I quickly realized these inconsistencies added up quickly and were making our sites look like ransom notes.</p> 
-            <p>The team needed a way to share the same library between multiple sites and to enforce consistency in design and front end code. I began working with the design team to set and enforce these standards.</p>
+        <p><br /><a class="portfolio-button" href="https://github.com/violetcrumble/Drag-and-Drop-Demo" target="_blank" rel="noreferrer noopener">View GitHub Repo</a></p>
+        </div>
+        <div class="col-md-5">
+            <img class="pull-right" src="images/drag-and-drop.jpg" alt="Drag and Drop Home Search" />
+        </div>
+    </div>
 
-            <p>I took the Sketch style guide and translated into code, showcased by <a href="https://storybook.js.org/" target="_blank" rel="noopener noreferrer">Storybook</a>. After creating a <a href="https://github.com/violetcrumble/widgets" target="_blank" rel="noreferrer noopener">proof-of-concept</a>, I was able to get non-technical stakeholder buy in for the shared component project. I worked with DevOps to create an NPM package so the library could be used in multiple projects.</p>
-
-            <p>Developers are discouraged to override styling of these components. If a developer needs something that is not in the style guide, I encourage them to work with design, and add to the component itself, as well as the visual test cases in Storybook.</p>
-
-            <p>This project has been a great success, for two different teams, as well as outside contractors. Everyone, including non-coding stakeholders, now see the value in this component library.  Development time is faster. Using our “legos”, I developed a last-minute landing page in a matter of hours. I just had a developer tell me the other day that he was able to reduce a 13 point story to a 5 point story since he could use the component library.</p>
-                
-                <p>QA time is faster. Sites are more uniform. Accessibility concerns can be addressed among several projects at once, creating an inclusive experience for users with screen readers or slower devices. Google Lighthouse scores went from the 50s to 80s+, decreased bounce rate, better performance on mobile. I use storybook to test AA accessibility on the components. It's easy to make sites inclusive of users with screen readers and slower devices.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/component-library/component-library-buttons.png" alt="Component Library Buttons"><br /><br />
-            <img src="images/component-library/component-library-card.png" alt="Component Library Home Card">
-                </div>
-            </div>
+    <div>
+        <br />
+        <img src="images/draganddrop2.jpg" alt="Drag and Drop Home Search" />
+    </div>
 
 
 </div>
@@ -111,5 +106,6 @@
             </div>
             <div class="copyright">Copyright &copy; 2020 Bonnie Mellott</div>
     </footer>
+
 </body>
 </html>
