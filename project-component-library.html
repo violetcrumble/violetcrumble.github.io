@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/bonniemellott.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.png" />
 
 <meta name="google-site-verification" content="0EQY1Nw3WluqJtDWcLifSNxI6dhF-NCPf2dta5pxG2Y" />
 
@@ -58,19 +59,30 @@
     <p class="portfolio-breadcrumb"><a href="portfolio.html" >Home</a> : <a href="portfolio.html" >Projects</a> : React Component Library </p>
 
     <h1>React Component Library Case Study</h1>
-    <img src="images/component-library/component-library-buttons.png" alt="">
-    <img src="images/component-library/component-library-card.png" alt="">
-    <p>At Clayton Homes, the front end projects were very inconsistent in terms of design, and had lots of duplicated code, which equaled duplicate work. I noticed things like 5 different versions of what should be the same button on one project - one might have a slightly different shade of blue, while one may have a slight gradient and a 3px border radius instead of 5px. The team needed a way to share the same library between multiple sites and to enforce consistency in design and front end code.</p>
 
-    <p>We needed consistency and a set of standards to enforce. I worked with the design team to set these standards.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <p>A couple years ago, at Clayton Homes, the front end projects were very inconsistent in terms of design, and had lots of duplicated code, which equaled duplicate work. I noticed things like 5 different versions of what should be the same button on one project - one might have a slightly different shade of blue, while one may have a slight gradient and a 3px border radius instead of 5px. These things may seem trivial to some developers, but as a dev who has a background in design, I quickly realized this was a problem. The team needed a way to share the same library between multiple sites and to enforce consistency in design and front end code. I began working with the design team to set and enforce these standards.</p>
+
 
     <p>I took the sketch style guide and put it into React Storybook. After creating a proof-of-concept, I was able to get non-technical stakeholder buy in for the shared component project. I worked with DevOps to create an NPM package so the library could be used in multiple projects.</p>
 
-    <p>Devs are discouraged to override styling of these components. If a developer needs something in the styleguide, I encourage them to work with design add to the component, as well as add to the visual test cases in storybook.</p>
+    <p>Developers are discouraged to override styling of these components. If a developer needs something that is not in the style guide, I encourage them to work with design add to the component, as well as add to the visual test cases in storybook.</p>
 
-    <p>This project has been a great success, for two different teams, as well as outside contractors. Everyone, including non-coding stakeholders, see the value in this component library. Development time is faster (Using our “legos”, I developed a last-minute landing page in a matter of hours). QA time is faster. Sites are more uniform. Accessibility concerns can be addressed among several projects at once, creating an inclusive experience for users with screen readers or slower devices.. Google lighthouse scores went from the 50s to 80s+, decreased bounce rate, better performance on mobile. I use storybook to test AA accessibility on the components. Inclusive for users with screen readers and slower devices.</p>
+    <p>This project has been a great success, for two different teams, as well as outside contractors. Everyone, including non-coding stakeholders, see the value in this component library. Development time is faster (Using our “legos”, I developed a last-minute landing page in a matter of hours). QA time is faster. Sites are more uniform. Accessibility concerns can be addressed among several projects at once, creating an inclusive experience for users with screen readers or slower devices. Google Lighthouse scores went from the 50s to 80s+, decreased bounce rate, better performance on mobile. I use storybook to test AA accessibility on the components. Inclusive for users with screen readers and slower devices.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/component-library/component-library-buttons.png" alt="Component Library Buttons"><br /><br />
+    <img src="images/component-library/component-library-card.png" alt="Component Library Home Card">
+        </div>
+    </div>
+
+    
 
 
+
+    
+   
 
 
 R - 
@@ -98,9 +110,8 @@ R -
                     <a href="http://www.flickr.com/cheesequeen/" target="_blank">
                         <img src="images/social_icons/flickr.png" alt="Flickr" border="0" />
                     </a> 
-                    <!--todo: make this an icon-->
                     <a href="https://stackoverflow.com/users/4483968/bonnie" target="_blank">
-                        StackOverflow
+                        <img src="images/social_icons/stack_overflow.png" alt="Stack Overflow" border="0" />
                     </a>
         </div>
         <div class="copyright">Copyright &copy; 2020 Bonnie Mellott</div>

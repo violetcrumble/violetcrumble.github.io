@@ -28,8 +28,24 @@ li {
 h1 {
   font: 22px Helvetica, Arial, sans-serif;
   text-transform: lowercase;
+  margin-bottom: 20px;
 }
 
+.portfolio-breadcrumb {
+  padding: 20px 0;
+}
+.portfolio-project {
+  border: solid 1px #ccc;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.portfolio-project h3 {
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 a:link,
 a:visited {
   color: #fd2900;
@@ -93,7 +109,8 @@ nav ul li a.active:visited {
 }
 
 .welcome p,
-.welcome li {
+.welcome li,
+.container-portfolio-project p {
   font-size: 16px;
   line-height: 160%;
 }
@@ -263,6 +280,10 @@ ul.slick-dots {
 }
 
 /******ABOUT ME******/
+.about-page p {
+  font-size: 16px;
+  line-height: 180%;
+}
 .white-border {
   border: 1px solid #ffffff;
 }
