@@ -228,7 +228,12 @@ footer {
   padding: 10px 20px 20px 20px;
   border-top: solid 1px #ccc;
   background-color: #242526;
-  min-height: 270px;
+  min-height: 400px;
+}
+@media (min-width: 576px) {
+  .carousel-project-info {
+    min-height: 270px;
+  }
 }
 .carousel-project-info .category-label {
   text-transform: uppercase;
@@ -246,7 +251,7 @@ a.carousel-project-button:link,
 a.carousel-project-button:visited {
   background-color: #720b00;
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   padding: 10px;
   border-radius: 5px;
   border: none;
