@@ -58,6 +58,7 @@ a:active {
 
 header {
   background: url("../images/colorbar.gif") top repeat-x #000;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -122,9 +123,18 @@ nav ul li a.active:visited {
 
 .welcome p,
 .welcome li,
-.container-portfolio-project p {
+.container-portfolio-project p,
+.container-contact p {
   font-size: 16px;
   line-height: 160%;
+}
+
+.welcome {
+  padding: 18px 0;
+}
+
+.welcome li {
+  margin-bottom: 10px;
 }
 
 section.side_blurbs {
