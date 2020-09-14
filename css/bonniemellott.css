@@ -247,7 +247,8 @@ footer {
     min-height: 270px;
   }
 }
-.carousel-project-info .category-label {
+.carousel-project-info .category-label,
+.caption {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -313,4 +314,10 @@ ul.slick-dots {
 .left_content {
   float: left;
   margin: 0 20px 20px 0;
+}
+
+.case-study-page p {
+  line-height: 180%;
+  padding-right: 25px;
+  padding-bottom: 10px;
 }
