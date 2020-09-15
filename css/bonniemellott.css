@@ -133,6 +133,11 @@ nav ul li a.active:visited {
   padding: 18px 0;
 }
 
+.welcome p,
+.welcome h3 {
+  margin-left: 15px;
+}
+
 .welcome li {
   margin-bottom: 10px;
 }
