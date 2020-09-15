@@ -39,12 +39,20 @@ h1 {
   cursor: pointer;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 .portfolio-project h3 {
   padding: 0;
   text-align: center;
   font-size: 16px;
   padding-bottom: 10px;
+}
+.portfolio-image {
+  width: 100%;
+  transition: all 600ms ease 0s;
+}
+.portfolio-image:hover {
+  transform: scale(1.08);
 }
 a:link,
 a:visited {
@@ -236,7 +244,16 @@ footer {
   position: relative;
   top: 2px;
 }
-
+.owl-carousel .owl-item {
+  overflow: hidden;
+  z-index: 9;
+}
+.owl-carousel .owl-item img {
+  transition: all 600ms ease 0s;
+}
+.owl-carousel .owl-item img:hover {
+  transform: scale(1.08);
+}
 .home-page-carousel .owl-dots {
   margin: 0 auto;
   text-align: center;
@@ -252,14 +269,13 @@ footer {
 .home-page-carousel .owl-dots .owl-dot.active {
   background-color: red;
 }
-.carousel-image {
-  width: 100%;
-}
 .carousel-project-info {
   padding: 10px 20px 20px 20px;
   border-top: solid 1px #ccc;
   background-color: #242526;
   min-height: 400px;
+  position: relative;
+  z-index: 10;
 }
 @media (min-width: 576px) {
   .carousel-project-info {
