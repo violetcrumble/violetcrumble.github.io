@@ -232,6 +232,10 @@ footer {
   line-height: 100%;
   font-weight: 200;
 }
+.home-page-carousel svg {
+  position: relative;
+  top: 2px;
+}
 
 .home-page-carousel .owl-dots {
   margin: 0 auto;
