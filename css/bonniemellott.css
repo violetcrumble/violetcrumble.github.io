@@ -28,14 +28,13 @@ li {
 h1 {
   font: 22px Helvetica, Arial, sans-serif;
   text-transform: lowercase;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 
 .portfolio-breadcrumb {
   padding: 20px 0;
 }
 .portfolio-project {
-  border: solid 1px #ccc;
   cursor: pointer;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -67,6 +66,8 @@ a:active {
 header {
   background: url("../images/colorbar.gif") top repeat-x #000;
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .container {
@@ -91,11 +92,12 @@ header {
 }
 #logo {
   max-width: 295px;
-  margin-top: 30px;
+  margin: 50px auto 0 auto;
 }
 
 nav {
   text-align: left;
+  margin-top: 30px;
 }
 
 nav ul {
@@ -146,16 +148,17 @@ nav ul li a.active:visited {
   margin-left: 15px;
 }
 
+.welcome h3 {
+  margin-bottom: 30px;
+}
+
 .welcome li {
   margin-bottom: 10px;
 }
 
 section.side_blurbs {
-  background-color: #242526;
+  background-color: #0006;
   padding-bottom: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   margin-top: 20px;
 }
 
@@ -176,7 +179,6 @@ section.side_blurbs {
 .side_blurbs .cta-buttons {
   text-align: center;
   padding: 0 20px;
-  height: 60px;
 }
 .side_blurbs p {
   margin: 20px 40px;
@@ -191,15 +193,18 @@ section.side_blurbs {
   padding: 15px;
   transition: 450ms;
   border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
 }
 .side_blurbs a:hover,
 .side_blurbs a:active {
   background-color: #410700;
 }
 footer {
-  background-color: #000;
   margin-top: 10px;
   padding: 10px 20px 30px 20px;
+  background: url("../images/colorbar.gif") bottom repeat-x #000;
 }
 
 
@@ -282,11 +287,14 @@ footer {
 }
 .carousel-project-info {
   padding: 10px 20px 20px 20px;
-  border-top: solid 1px #ccc;
-  background-color: #242526;
+  /* border-top: solid 1px #ccc; */
+  background-color: #000;
   min-height: 400px;
   position: relative;
   z-index: 10;
+}
+.carousel-project-info h3 {
+  font-size: 22px;
 }
 @media (min-width: 576px) {
   .carousel-project-info {
@@ -310,8 +318,8 @@ a.carousel-project-button:link,
 a.carousel-project-button:visited {
   background-color: #720b00;
   color: #fff;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 8px;
   border-radius: 5px;
   border: none;
   transition: 450ms;
