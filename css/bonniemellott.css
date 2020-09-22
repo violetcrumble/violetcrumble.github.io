@@ -10,7 +10,7 @@
 }
 
 body {
-  background: url("../images/bg-page.gif") repeat #300500;
+  background-color:  #1e1e1e;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -91,7 +91,7 @@ header {
   background-color: #1e1e1e;
 }
 #logo {
-  max-width: 295px;
+  max-width: 230px;
   margin: 50px auto 0 auto;
 }
 
@@ -111,7 +111,7 @@ nav ul li {
 
 nav ul li a:link,
 nav ul li a:visited {
-  font: 20px lt_oksanaregular;
+  font: 18px lt_oksanaregular;
   text-transform: lowercase;
   background-color: #0d0d0d;
   color: #fff;
@@ -129,6 +129,10 @@ nav ul li a:active,
 nav ul li a.active:link,
 nav ul li a.active:visited {
   background-color: #1e1e1e;
+}
+
+.container-contact {
+  min-height: 300px;
 }
 
 .welcome p,
@@ -163,18 +167,18 @@ section.side_blurbs {
 }
 
 .side_blurbs h3 {
-  background-color: #720b00;
+  background-color: #000;
   color: #fff;
   font: 18px lt_oksanaregular;
   padding: 5px;
   text-align: center;
   text-transform: lowercase;
-  -webkit-top-left-border-radius: 5px;
-  -moz-top-left-border-radius: 5px;
-  border-top-left-radius: 5px;
-  -webkit-top-right-border-radius: 5px;
-  -moz-top-right-border-radius: 5px;
-  border-top-right-radius: 5px;
+  -webkit-top-left-border-radius: 3px;
+  -moz-top-left-border-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-top-right-border-radius: 3px;
+  -moz-top-right-border-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .side_blurbs .cta-buttons {
   text-align: center;
@@ -192,10 +196,12 @@ section.side_blurbs {
   color: #fff;
   padding: 15px;
   transition: 450ms;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 100%;
   margin-bottom: 10px;
   display: block;
+  font: 16px lt_oksanaregular;
+  text-transform: lowercase;
 }
 .side_blurbs a:hover,
 .side_blurbs a:active {
