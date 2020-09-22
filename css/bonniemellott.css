@@ -199,12 +199,23 @@ section.side_blurbs {
 footer {
   background-color: #000;
   margin-top: 10px;
-  padding: 10px 0 30px 0;
+  padding: 10px 20px 30px 20px;
 }
+
 
 .stalking h2 {
   color: #fff;
   font: 15px lt_oksanaregular;
+}
+
+.stalking svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.stalking svg path {
+  fill: #fff;
 }
 
 .copyright {
