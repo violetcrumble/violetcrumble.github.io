@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color:  #1e1e1e;
+  background-color: #1e1e1e;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -70,8 +70,11 @@ header {
   text-align: center;
 }
 
-.container {
-  max-width: 1500px;
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1500px;
+  }
 }
 
 .container-portfolio-project img {
@@ -223,7 +226,6 @@ footer {
   padding: 10px 20px 30px 20px;
   background: url("../images/colorbar.gif") bottom repeat-x #000;
 }
-
 
 .stalking h2 {
   color: #fff;
