@@ -226,22 +226,6 @@ footer {
   padding: 10px 20px 30px 20px;
   background: url("../images/colorbar.gif") bottom repeat-x #000;
 }
-
-.stalking h2 {
-  color: #fff;
-  font: 15px lt_oksanaregular;
-}
-
-.stalking svg {
-  width: 25px;
-  height: 25px;
-  margin-right: 20px;
-}
-
-.stalking svg path {
-  fill: #fff;
-}
-
 .copyright {
   color: #fff;
   margin: 20px 0;
