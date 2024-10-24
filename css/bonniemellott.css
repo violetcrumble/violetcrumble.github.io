@@ -28,7 +28,7 @@ li {
 h1 {
   font: 22px Helvetica, Arial, sans-serif;
   text-transform: lowercase;
-  margin: 40px 0;
+  margin: 10px 0 40px 0;
 }
 
 .portfolio-breadcrumb {
